@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>temperature converter</h2>
+    <input class="starter" id="input " placeholder="input fahrenheit"/>
+
+    <h2>Result</h2>
+
+    <h2>output celsius:</h2>
+    <p class="starter" id="output1">
+    <h2>output kelvin:</h2>
+    <p class="starter" id="output2">
+
+    <script>
+      document.querySelector('input').addEventListener('change', function(event){
+        var currentInput = event.target.value;
+        inputHappenedCelsius(currentInput)
+        inputHappenedKelvin(currentInput)
+    });
+
+      var displayCelsius = function( data ){
+        var outputCelsius = document.querySelector('output1');
+        output1.innerText = data;
+    }
+    var displayKelvin = function( data ){
+        var outputKelvin = document.querySelector('output2');
+        output2.innerText = data;
+      }
+      var displayFahrenheit = function( data ){
+        var outputFahrenheit = document.querySelector('output3');
+        output3.innerText = data;
+        }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
